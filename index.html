@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projektni zadatak</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/33bde986c6.js" crossorigin="anonymous"></script>
+
+    <script>
+        module.exports = {
+  content: ['./src/**/*.{html,js}'],
+  theme: {
+    colors: {
+      'blue': '#1fb6ff',
+      'purple': '#7e5bef',
+      'pink': '#ff49db',
+      'orange': '#ff7849',
+      'green': '#13ce66',
+      'yellow': '#ffc82c',
+      'gray-dark': '#273444',
+      'gray': '#8492a6',
+      'gray-light': '#d3dce6',
+    },
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
+    },
+    extend: {
+      spacing: {
+        '8xl': '96rem',
+        '9xl': '128rem',
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      }
+    }
+  },
+}
+    </script>
+</head>
+<body class="bg-gradient-to-r from-cyan-500 to-blue-500">
+  <header>
+    <nav class="max-w-5xl mx-auto py-4 rounded-[1rem] mt-6" style="background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);">
+        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-content-between">
+            <li class="border-y-4 border-grey-900 rounded-md text-lg text-center py-5 drop-shadow-xl uppercase focus:underline decoration-indigo-600 hover:translate-y-1 hover:animate-pulse hover:underline md:underline-offset-4"><a href="#">home</a></li>
+            <li class="border-y-4 border-grey-900 rounded-md text-lg text-center py-5 drop-shadow-xl uppercase focus:underline decoration-indigo-600 hover:translate-y-1 hover:animate-pulse hover:underline md:underline-offset-4"><a href="#">news</a></li>
+            <li class="border-y-4 border-grey-900 rounded-md text-lg text-center py-5 drop-shadow-xl uppercase focus:underline decoration-indigo-600 hover:translate-y-1 hover:animate-pulse hover:underline md:underline-offset-4"><a href="#">location</a></li>
+            <li class="border-y-4 border-grey-900 rounded-md text-lg text-center py-5 drop-shadow-xl uppercase focus:underline decoration-indigo-600 hover:translate-y-1 hover:animate-pulse hover:underline md:underline-offset-4"><a href="#">admin</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main class="max-w-5xl mx-auto">
+    <div class="my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-content-evenly ">
+      <section class="flex w-120 h-80 justify-center rounded-xl items-center bg-black opacity-80 uppercase text-red-400 font-sans	text-2xl font-extrabold	tracking-widest	drop-shadow-lg  bg-center hover:scale-105 ease-in duration-200" style="background-image: url(images/daniel-salcius-RRcYcdGY630-unsplash.jpg);">Prvi</section>
+      <section class="flex w-120 h-80 justify-center rounded-xl items-center bg-black opacity-80 uppercase text-red-400 font-sans	text-2xl font-extrabold	tracking-widest	drop-shadow-lg  bg-center hover:scale-105 ease-in duration-200" style="background-image: url(images/dmitrii-vaccinium-sw9Vozf6j_4-unsplash.jpg);">Drugi</section>
+      <section class="flex w-120 h-80 justify-center rounded-xl items-center bg-black opacity-80 uppercase text-red-400 font-sans	text-2xl font-extrabold	tracking-widest	drop-shadow-lg  bg-center hover:scale-105 ease-in duration-200" style="background-image: url(images/nik-owens-RKU4zSFitWM-unsplash.jpg);">Treci</section>
+      <section class="flex w-120 h-80 justify-center rounded-xl items-center bg-black opacity-80 uppercase text-red-400 font-sans	text-2xl font-extrabold	tracking-widest	drop-shadow-lg  bg-center hover:scale-105 ease-in duration-200" style="background-image: url(images/robert-bye-tG36rvCeqng-unsplash.jpg);">Četvrti</section>
+      <section class="flex w-120 h-80 justify-center rounded-xl items-center bg-black opacity-80 uppercase text-red-400 font-sans	text-2xl font-extrabold	tracking-widest	drop-shadow-lg  bg-center hover:scale-105 ease-in duration-200" style="background-image: url(images/mikkel-bech-yjAFnkLtKY0-unsplash.jpg);">Peti</section>
+      <section class="flex w-120 h-80 justify-center rounded-xl items-center bg-black opacity-80 uppercase text-red-400 font-sans	text-2xl font-extrabold	tracking-widest	drop-shadow-lg  bg-center hover:scale-105 ease-in duration-200" style="background-image: url(images/tiffany-nutt-0ClfreiNppM-unsplash.jpg);">Šesti</section>
+    </div>
+  </main>
+  <footer class="max-w-2xl mx-auto p-6 rounded-[2rem] border-[3px] border-grey-900 my-10" style="background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);">
+    
+      <div class="flex my-10 justify-around">
+        <a href="ihttps://www.instagram.com/?hl=en" target="_blank"><i class="fa-brands fa-3x mx-6 fa-instagram"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-3x mx-6 fa-youtube"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-3x mx-6 fa-facebook"></i></a>
+      </div>
+      <div class="max-w-md flex justify-center mx-auto pb-4">
+        <div class="border-r-2 border-red-500 p-4">
+          <div>Patrik Poštek</div>
+          <div>ppostek@tvz.hr</div>
+        </div>
+        <div class="text-2xl tracking-widest p-4 ml-10">
+          2022
+        </div>
+      </div>
+    
+  </footer>
+</body>
+</html>
