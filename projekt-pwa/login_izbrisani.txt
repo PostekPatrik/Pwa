@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projekt</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- google-fonts naslov -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Noto+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<h1 class="logo">Pedale</h1>
+	<header>
+		<div>
+			<nav class="centar">
+				<ul>
+					<li class="shrink"><a href="index.php">Početna</a></li>
+					<li class="shrink"><a href="unos.html">Unos</a></li>
+					<li class="shrink"><a href="login.html">Prijava</a></li>
+					<li class="shrink"><a href="register.php">Registracija</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+            <form action="validate.php" method="post">
+                <div class="login-box">
+                    <h1>Login</h1>
+         
+                    <div class="textbox">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" placeholder="Username"
+                                 name="username" value="">
+                    </div>
+         
+                    <div class="textbox">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" placeholder="Password"
+                                 name="password" value="">
+                    </div>
+         
+                    <input class="button" type="submit"
+                             name="login" value="Sign In">
+                </div>
+            </form>
+		</div>
+	</main>
+	<footer>
+		<div class="wave">
+			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+				<path d="M1200 120L0 40 0 0 1200 0 1200 200z" class="shape-fill"></path>
+			</svg>
+		</div>
+		<div class="foot">
+			<div class="prvi">Patrik Poštek &copy; 2022</div>
+			<div class="drugi">Programiranje Web Aplikacija</div>
+		</div>
+	</footer>
+</body>
+</html>

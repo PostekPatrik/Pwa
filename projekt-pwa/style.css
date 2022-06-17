@@ -1,0 +1,169 @@
+*::before, *::after, * {
+    box-sizing:border-box;
+    
+}
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+body {
+    background-color: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height:100%;
+}
+
+header {
+    padding:10px 0px 20px 0px;
+}
+
+.container {
+    max-width:1140px;
+    margin:0 auto;
+}
+
+.centar {
+    max-width:720px;
+    margin:0 auto;
+}
+
+.logo {
+    font-family: 'Caesar Dressing', cursive;
+    letter-spacing: 0.2rem;
+    padding:10px;
+    font-size:4rem;
+    text-align:center;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    text-align:center;
+}
+ul li {
+    list-style-type: none;
+    font-family: 'Noto Sans', sans-serif;
+    padding:1rem 1.5rem;
+    width:25%;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+ul > li > a {
+    text-shadow:black 5px 5px 5px; 
+}
+
+.drugi {
+    padding-top:0.8rem;
+    color:rgb(101, 25, 233);
+    font-weight:600;
+    font-size:1.25rem;
+
+}
+
+@media (max-width: 720px) {
+    .shrink {
+      flex: 50%;
+    }
+    ul li {
+        padding:0.5rem 1rem;
+    }
+  }
+  @media (max-width: 480px) {
+    .shrink {
+      flex: 100%;
+    }
+  }
+
+  .wave {
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(223% + 1.3px);
+    height: 250px;
+}
+
+.wave .shape-fill {
+    
+    fill: #dedfe2;  
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+}
+
+.footer {
+    bottom:auto;
+}
+
+.foot {
+    position:absolute;
+    bottom:30px;
+    left:5vh;
+}
+
+img {
+    width:300px;
+}
+
+article {
+    width: 32%;
+    text-align:center;
+}
+
+.items {
+    display:flex;
+    justify-content: space-around;
+}
+
+.novo {
+    text-align:center;
+    padding-top:5px;
+    padding-bottom:40px;
+}
+
+.rabljeno {
+    text-align:center;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.title {
+    padding:10px;   
+    font-size:1.2rem;
+}
+
+h2 {
+    background-color: white;
+    width: 75%;
+    margin:0 auto;
+    border-radius:5px;
+    padding:7px;
+    letter-spacing:2px;
+}
+
+
+
+
+
+
+
+
+
+

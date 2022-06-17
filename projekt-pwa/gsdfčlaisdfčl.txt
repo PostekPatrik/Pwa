@@ -1,0 +1,26 @@
+        $sql="INSERT INTO glavna (datum, naslov, sazetak, tekst, slika, kategorija, arhiva) values (?, ?, ?, ?, ?, ?, ?)";
+
+$stmt=mysqli_stmt_init($dbc);
+        
+        /* Povezuje parametre statement objekt s upitom */
+        if (mysqli_stmt_prepare($stmt, $sql)){
+
+            /* Povezuje parametre i njihove tipove s statement objektom */
+            mysqli_stmt_bind_param($stmt,'sssssss',$datum, $naslov, $about, $content, $slika, $kategorija, $arhiva);
+    
+            /* Izvršava pripremljeni upit */
+            mysqli_stmt_execute($stmt);
+        }
+
+        if(isset($_POST['submit'])) {
+            echo "<article>";
+                echo "<h1>" . $naslov ."</h1>";
+                echo "<p>" . $about . "</p>";
+                echo "<p>" . $content . "</p>";
+                echo "<img src='img/$slika'>";
+            echo "</article>";
+        } else {
+            echo "nesto ne valja";
+        }
+
+			$query = "SELECT FROM glavna WHERE arhiva=0 AND kategorija = 'novo' ORDER BY id DESC LIMIT 3";
