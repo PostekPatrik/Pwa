@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,8 +58,7 @@
 
 		$result = mysqli_query($dbc, $sql) or die('Error querying database');
 		mysqli_close($dbc);
-
-
+		
 		echo '<article>';
 			echo "<div class='image'>";
 			echo "<img src='img/" . $slika . "' style='width:300px;'>";

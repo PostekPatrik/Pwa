@@ -50,7 +50,7 @@ ul li {
     list-style-type: none;
     font-family: 'Noto Sans', sans-serif;
     padding:1rem 1.5rem;
-    width:25%;
+    /* width:25%; */
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -123,13 +123,14 @@ img {
 }
 
 article {
-    width: 32%;
+    flex:1 0 32%;
     text-align:center;
 }
 
 .items {
     display:flex;
     justify-content: space-around;
+    flex-wrap:wrap;
 }
 
 .novo {
@@ -147,6 +148,8 @@ article {
 .title {
     padding:10px;   
     font-size:1.2rem;
+    align-items:baseline;
+    color:#dedfe2;
 }
 
 h2 {
@@ -157,6 +160,24 @@ h2 {
     padding:7px;
     letter-spacing:2px;
 }
+
+.element {
+    display:flex;
+}
+
+.pojma_nemam {
+    color:rgb(204, 204, 204);
+    padding:30px 0 20px 0;
+}
+
+.kate {
+    color:rgb(101, 25, 233);
+    text-transform:uppercase;
+    padding:1em;
+}
+
+
+
 
 
 

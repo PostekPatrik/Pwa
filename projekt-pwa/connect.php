@@ -3,9 +3,9 @@
 header('Content-Type: text/html; charset=UTF-8');
 
 $server = 'localhost';
-$username = 'root';
-$password = '';
-$basename = 'projekt';
+$ime = 'root';
+$lozinka = '';
+$baza = 'projekt';
 
-$dbc = mysqli_connect($server, $username, $password, $basename) or die('Ne može se povezati na bazu'.mysqli_connect_error());
+$dbc = mysqli_connect($server, $ime, $lozinka, $baza) or die('Ne može se povezati na bazu'.mysqli_connect_error());
 mysqli_set_charset($dbc, "utf8");

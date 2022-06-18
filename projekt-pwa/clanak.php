@@ -23,8 +23,6 @@
 					<li class="shrink"><a href="unos.html">Unos</a></li>
 					<li class="shrink"><a href="login.php">Prijava</a></li>
 					<li class="shrink"><a href="register.php">Registracija</a></li>
-					
-
 				</ul>
 			</nav>
 		</div>
@@ -32,56 +30,37 @@
 
 	<main>
 		<div class="container">
-			
 			<?php
 			include 'connect.php';
+			
+			$slika = $_POST['submit'];
 			?>
-			<div class="novo">
-				<h2>NOVO</h2>
-			</div>
+
 
 			<section class="items">
 				<?php
-				$query = "SELECT * FROM main WHERE arhiva=0 AND kategorija = 'novo' ORDER BY id DESC LIMIT 3";
+				$query = "SELECT * FROM main WHERE slika='$slika'";
 				$result = mysqli_query($dbc, $query);
 				while ($row = mysqli_fetch_array($result)) {
 					echo '<article>';
-					echo "<form action='clanak.php' method='post'>
-							<input type='hidden' name='test'>
-							<button type='submit' name='submit' value='" . $row['slika'] . "'>
-							<img src='img/".$row['slika']."'></button>
-						</form>";
-					echo '<h4 class="title">';
-						echo $row['naslov'];
-					echo '</h4>';
-					echo '</article>';
-				}
-				?>
-			</section>
-
-				<div class="rabljeno">
-					<h2>RABLJENO</h2>
-				</div>
-			
-			<section class="items">
-				<?php
-
-				$query1 = "SELECT * FROM main WHERE arhiva=0 AND kategorija = 'rabljeno' ORDER BY id DESC LIMIT 3";
-				$result = mysqli_query($dbc, $query1);
-				while ($row = mysqli_fetch_array($result)) {
-					echo '<article>';
-
-					echo '<a href="clanak.php?id=' . $row['id'] . '">';
+					echo "<div class='novo'>";
+						echo "<h2>";
+					    	echo $row['naslov'];
+						echo "</h2>";
+					echo "</div>";
 					echo "<img src='img/" . $row['slika'] . "'>";
 					echo '</a>';
-					echo '<h4 class="title">';
-					echo $row['naslov'];
-					echo '</h4>';
+                    echo '<p class="pojma_nemam">';
+                        echo $row['tekst'];
+                    echo '</p>';
+                    echo '<h3 id="spec">Specifikacije:</h3>';
+                    echo '<div class="kate">'.$row['kategorija'].'</div>';
 					echo '</article>';
 				}
 				?>
 			</section>
-		</div>
+
+
 	</main>
 	<footer class="footer">
 		<div class="wave">
