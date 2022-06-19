@@ -1,0 +1,310 @@
+*::before, *::after, * {
+    box-sizing:border-box;
+    
+}
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+body {
+    background-color: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height:100%;
+}
+
+header {
+    padding:10px 0px 20px 0px;
+}
+
+.container {
+    max-width:1140px;
+    margin:0 auto;
+}
+
+.centar {
+    max-width:720px;
+    margin:0 auto;
+}
+
+.logo {
+    font-family: 'Caesar Dressing', cursive;
+    letter-spacing: 0.2rem;
+    padding:10px;
+    font-size:4rem;
+    text-align:center;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    text-align:center;
+}
+ul li {
+    list-style-type: none;
+    font-family: 'Noto Sans', sans-serif;
+    padding:1rem 1.5rem;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+ul > li > a {
+    text-shadow:black 5px 5px 5px; 
+}
+
+.drugi {
+    padding-top:0.8rem;
+    color:rgb(101, 25, 233);
+    font-weight:600;
+    font-size:1.25rem;
+
+}
+
+@media (max-width: 720px) {
+    .shrink {
+      flex: 1 1 100%;
+    }
+
+    ul li {
+        padding:0.5rem 1rem;
+    }
+  }
+
+  .wave {
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(223% + 1.3px);
+    height: 250px;
+}
+
+.wave .shape-fill {
+    
+    fill: #dedfe2;  
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+}
+
+.footer {
+    bottom:auto;
+}
+
+
+.foot {
+    position:absolute;
+    bottom:30px;
+    left:5vh;
+}
+
+img {
+    width:300px;
+}
+
+article {
+    flex:1 1 32%;
+    text-align:center;
+}
+
+.items {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+.novo {
+    text-align:center;
+    padding-top:5px;
+    padding-bottom:40px;
+}
+
+.rabljeno {
+    text-align:center;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.title {
+    padding:10px;   
+    font-size:1.2rem;
+    align-items:baseline;
+    color:#dedfe2;
+}
+
+h2 {
+    background-color: white;
+    width: 75%;
+    margin:0 auto;
+    border-radius:5px;
+    padding:7px;
+    letter-spacing:2px;
+}
+
+.visina {
+   min-height:400px;
+}
+
+.visina2 {
+    min-height:700px;
+}
+
+.pojma_nemam {
+    color:rgb(204, 204, 204);
+    padding:30px 0 20px 0;
+    max-width:300px;
+
+}
+
+.kate {
+    color:rgb(101, 25, 233);
+    text-transform:uppercase;
+    padding:1em;
+}
+
+.smece {
+    position:relative;
+    bottom:0;
+}
+
+.unos {
+    display:flex;
+    align-items: center;
+}
+
+.gumb {
+    position:fixed;
+    top:15px;
+    right:20px;
+}
+
+.gumb > button, .loggumb {
+    all:unset;
+    cursor:pointer;
+    color:rgb(204, 204, 204);
+    padding:5px;
+    font-size:0.75rem;
+    border-radius:10px;
+    border:3px solid rgb(101, 25, 233);
+    box-shadow:10px 5px 20px rgb(74, 20, 166);
+}
+
+.btn {
+    all:unset;
+    cursor:pointer;
+    color:rgb(204, 204, 204);
+    padding:7px 12px 7px 12px;
+    font-weight:bold;
+    font-size:0.75rem;
+    border-radius:10px;
+    background-color: rgb(101, 25, 233);
+    margin:1.5em 0.5em 1.5em 0.5em;
+
+}
+.loggumb, .adm > h4 {
+    font-size:1rem;
+    margin:1em 0 1em 0;
+}
+
+.flex {
+    justify-content: center;
+    display:flex;
+}
+
+.sivo {
+    color:rgb(176, 80, 255);
+}
+
+a.link:link {
+    text-decoration: none;
+    color:rgb(142, 122, 159);
+  }
+  
+  a.link:visited {
+    text-decoration: none;
+    color:rgb(152, 115, 216);
+    box-shadow: 2px 2px 10px #232526;
+
+  }
+  
+  a.link:hover {
+    text-decoration: underline;
+    color:rgb(131, 84, 214);
+
+  }
+  
+  a.link:active {
+    text-decoration: underline;
+    color:rgb(157, 136, 249);
+  }
+
+.druga{
+    position:relative;
+    left:53px;
+}
+
+.poruka {
+
+    color:rgb(157, 136, 249);
+    margin:10px 0 10px 100px;
+}   
+
+.ispis button {
+    margin-left:20px;
+}
+input, textarea, select {
+    padding: 8px 12px;
+    border-radius:10px;
+}
+
+textarea {
+    overflow-y:hidden;
+}
+
+input:focus, textarea:focus {
+    outline:3px solid rgb(101, 25, 233);
+}
+
+
+.posebno {
+    display:none;
+}
+
+div.btn {
+    margin:1.5em 0 1.5em 0;
+}
+
+.form-field{
+    margin:0.5em 0 0.5em 0;
+}
+
+.forma-naslov {
+    color:rgb(147, 85, 255);
+    margin-bottom:20px;
+}
+
+.molim {
+    letter-spacing:1.5px;
+    margin:0 0 20px 0;
+}
+
+
+
+
+
